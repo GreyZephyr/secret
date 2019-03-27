@@ -27,18 +27,11 @@ etc., in R packages, using public key cryptography.
 
 ## Installation
 
-Install the package using the `install-github.me` service:
+Install the package from CRAN:
 
 
 ```r
-source("https://install-github.me/gaborcsardi/secret")
-```
-    
-Or using `devtools`:
-
-
-```r
-devtools::install_github("gaborcsardi/secret")
+install.packages("secret")
 ```
 
 
@@ -76,10 +69,6 @@ Test that the package can read your key. This might fail if you don't have a key
 ```r
 library(secret)
 try(local_key(), silent = TRUE)
-```
-
-```
-# Please enter private key passphrase:
 ```
 
 ### Create a vault:
